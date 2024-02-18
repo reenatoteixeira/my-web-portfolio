@@ -13,7 +13,7 @@ html {
 body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
-  font-size: 0.95rem;
+  font-size: var(--normal);
   color: var(--text-color);
   background-color: var(--background-color);
 }
