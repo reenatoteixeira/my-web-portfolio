@@ -1,0 +1,19 @@
+:root {
+  /* COLORS */
+  --hue-color: 210;
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --background-color: hsl(var(--hue-color), 60%, 99%);
+
+  /* FONT SIZES */
+  --h2: 1.25rem;
+
+  /* FONT WEIGHTS */
+  --medium: 500;
+  --semi-bold: 600;
+
+  /* MARGINS */
+  --m-0-5: 0.5rem;
+  --m-1-5: 1.5rem;
+}
