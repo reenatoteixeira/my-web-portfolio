@@ -13,6 +13,7 @@
   --body-font: "Poppins", sans-serif;
 
   /* FONT SIZES */
+  --small: 0.815rem;
   --h3: 1.125rem;
   --h2: 1.25rem;
   --big: 2rem;
