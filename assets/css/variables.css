@@ -27,4 +27,7 @@
   --m-0-75: 0.75rem;
   --m-1-5: 1.5rem;
   --m-2: 2rem;
+
+  /* COMPONENTS */
+  --header-height: 3rem;
 }
