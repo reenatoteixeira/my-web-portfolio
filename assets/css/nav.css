@@ -76,3 +76,7 @@
   display: flex;
   align-items: center;
 }
+
+.nav__menu--show {
+  bottom: 0;
+}
