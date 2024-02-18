@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 :root {
   /* COLORS */
   --hue-color: 210;
@@ -6,6 +8,9 @@
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --background-color: hsl(var(--hue-color), 60%, 99%);
+
+  /* FONT */
+  --body-font: "Poppins", sans-serif;
 
   /* FONT SIZES */
   --h3: 1.125rem;
