@@ -5,8 +5,10 @@
   --hue-color: 210;
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-light: hsl(var(--hue-color), 92%, 85%);
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
   --background-color: hsl(var(--hue-color), 60%, 99%);
 
   /* FONT */
