@@ -1,0 +1,31 @@
+.about__description {
+  text-align: center;
+  margin-bottom: var(--m-2-5);
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--m-2-5);
+}
+
+.about__info__title {
+  font-size: var(--h2);
+  font-weight: var(--semi-bold);
+  color: var(--title-color);
+}
+
+.about__info__name {
+  font-size: var(--smaller);
+}
+
+.about__info__title,
+.about__info__name {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
+}
