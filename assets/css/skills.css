@@ -95,16 +95,16 @@
   width: 90%;
 }
 
-.skills__content--close .skills__list {
+.--close .skills__list {
   height: 0;
   overflow: hidden;
 }
 
-.skills__content--open .skills__list {
+.--open .skills__list {
   height: max-content;
   margin-bottom: var(--m-2-5);
 }
 
-.skills__content--open .skills__arrow {
+.--open .skills__arrow {
   transform: rotate(180deg);
 }
