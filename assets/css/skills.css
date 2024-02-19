@@ -1,0 +1,110 @@
+.skills__container {
+  row-gap: 0;
+}
+
+.skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--m-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon {
+  margin-right: var(--m-0-75);
+}
+
+.skills__title {
+  font-size: var(--h3);
+}
+
+.skills__subtitle {
+  font-size: var(--small);
+  color: var(--text-color-light);
+}
+
+.skills__arrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skills__list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--m-0-5);
+}
+
+.skills__name {
+  font-size: var(--normal);
+  font-weight: var(--medium);
+}
+
+.skills__bar,
+.skills__percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+.skills__bar {
+  background-color: var(--first-color-light);
+}
+
+.skills__percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+
+.skills__html {
+  width: 90%;
+}
+
+.skills__css {
+  width: 90%;
+}
+
+.skills__javascript {
+  width: 90%;
+}
+
+.skills__react {
+  width: 90%;
+}
+
+.skills__php {
+  width: 90%;
+}
+
+.skills__sql {
+  width: 90%;
+}
+
+.skills__figma {
+  width: 90%;
+}
+
+.skills__photoshop {
+  width: 90%;
+}
+
+.skills__content--close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__content--open .skills__list {
+  height: max-content;
+  margin-bottom: var(--m-2-5);
+}
+
+.skills__content--open .skills__arrow {
+  transform: rotate(180deg);
+}
