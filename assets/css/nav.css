@@ -80,3 +80,7 @@
 .nav__menu--show {
   bottom: 0;
 }
+
+.nav__link--active {
+  color: var(--first-color);
+}
