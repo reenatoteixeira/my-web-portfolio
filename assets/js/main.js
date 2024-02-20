@@ -73,11 +73,30 @@ function initPortfolioSwiper() {
   });
 }
 
+function initTestimonialSwiper() {
+  new Swiper(".testimonial__container", {
+    grabCursor: true,
+    loop: true,
+    spaceBetween: 48,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    breakpoints: {
+      568: {
+        slidesPerView: 2,
+      },
+    },
+  });
+}
+
 function main() {
   navMenuToggle();
   toggleSkills();
   switchQualificationTab();
   initPortfolioSwiper();
+  initTestimonialSwiper();
 }
 
 main();
