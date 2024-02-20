@@ -128,6 +128,17 @@ function initTestimonialSwiper() {
   });
 }
 
+function scrollTop() {
+  window.addEventListener("scroll", () => {
+    const scrollTop = document.getElementById("scrollTop");
+    if (this.scrollY >= 200) {
+      scrollTop.classList.add("scroll-top--show");
+    } else {
+      scrollTop.classList.remove("scroll-top--show");
+    }
+  });
+}
+
 function main() {
   navMenuToggle();
   navMenuLinkAction();
@@ -136,6 +147,7 @@ function main() {
   switchQualificationTab();
   initPortfolioSwiper();
   initTestimonialSwiper();
+  scrollTop();
 }
 
 main();
