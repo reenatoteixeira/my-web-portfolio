@@ -27,6 +27,32 @@ function navMenuLinkAction() {
   navLink.forEach((n) => n.addEventListener("click", linkAction));
 }
 
+function navActiveLinkHighlight() {
+  const sections = document.querySelectorAll("section[id]");
+
+  function scrollActive() {
+    const scrollY = window.scrollY;
+
+    sections.forEach((current) => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 50;
+      sectionId = current.getAttribute("id");
+
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        document
+          .querySelector(".nav__menu a[href*=" + sectionId + "]")
+          .classList.add("nav__link--active");
+      } else {
+        document
+          .querySelector(".nav__menu a[href*=" + sectionId + "]")
+          .classList.remove("nav__link--active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", scrollActive);
+}
+
 function setSkillsClass() {
   const skillsContent = document.getElementsByClassName("skills__content");
   let itemClass = this.parentNode.className;
@@ -105,6 +131,7 @@ function initTestimonialSwiper() {
 function main() {
   navMenuToggle();
   navMenuLinkAction();
+  navActiveLinkHighlight();
   toggleSkills();
   switchQualificationTab();
   initPortfolioSwiper();
