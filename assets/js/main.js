@@ -58,10 +58,26 @@ function switchQualificationTab() {
   });
 }
 
+function initPortfolioSwiper() {
+  new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+
 function main() {
   navMenuToggle();
   toggleSkills();
   switchQualificationTab();
+  initPortfolioSwiper();
 }
 
 main();
