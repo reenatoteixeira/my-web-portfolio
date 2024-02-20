@@ -16,6 +16,17 @@ function navMenuToggle() {
   }
 }
 
+function navMenuLinkAction() {
+  const navLink = document.querySelectorAll(".nav__link");
+
+  function linkAction() {
+    const navMenu = document.getElementById("navMenu");
+    navMenu.classList.remove("nav__menu--show");
+  }
+
+  navLink.forEach((n) => n.addEventListener("click", linkAction));
+}
+
 function setSkillsClass() {
   const skillsContent = document.getElementsByClassName("skills__content");
   let itemClass = this.parentNode.className;
@@ -93,6 +104,7 @@ function initTestimonialSwiper() {
 
 function main() {
   navMenuToggle();
+  navMenuLinkAction();
   toggleSkills();
   switchQualificationTab();
   initPortfolioSwiper();
