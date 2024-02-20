@@ -37,9 +37,31 @@ function toggleSkills() {
   });
 }
 
+function switchQualificationTab() {
+  const tabs = document.querySelectorAll("[data-target]"),
+    tabContents = document.querySelectorAll("[data-content]");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = document.querySelector(tab.dataset.target);
+
+      tabContents.forEach((tabContent) => {
+        tabContent.classList.remove("qualifications--active");
+      });
+      target.classList.add("qualifications--active");
+
+      tabs.forEach((tab) => {
+        tab.classList.remove("qualifications--active");
+      });
+      tab.classList.add("qualifications--active");
+    });
+  });
+}
+
 function main() {
   navMenuToggle();
   toggleSkills();
+  switchQualificationTab();
 }
 
 main();
