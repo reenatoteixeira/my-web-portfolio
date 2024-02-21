@@ -522,7 +522,6 @@
       </div>
     </section>
 
-    <!-- [TODO: fix form submit action] -->
     <section class="contact section" id="contactMe">
       <h2 class="section__title">Contact Me</h2>
       <span class="section__subtitle">Get it touch</span>
@@ -557,7 +556,7 @@
           </div>
         </div>
 
-        <form action="" class="contact__form grid">
+        <form action="https://formspree.io/f/xqkrqvrw" method="POST" class="contact__form grid" id="contactForm">
           <div class="contact__inputs grid">
             <div class="contact__content">
               <label for="name" class="contact__label">Name</label>
@@ -577,7 +576,8 @@
             </div>
 
             <div>
-              <a href="#" class="button button--flex">
+              <a href="javascript:{}" onclick="document.getElementById('contactForm').submit();"
+                class="button button--flex">
                 Send Message <i class="uil uil-message button__icon"></i>
               </a>
             </div>
