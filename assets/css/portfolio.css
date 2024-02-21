@@ -3,11 +3,11 @@
 }
 
 .portfolio__content {
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
 .portfolio__img {
-  width: 265px;
+  width: 90%;
   border-radius: 0.5rem;
   justify-self: center;
 }
