@@ -88,3 +88,14 @@
 .header--scroll {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
+
+.theme-button {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--m-1);
+  cursor: pointer;
+}
+
+.theme-button:hover {
+  color: var(--first-color);
+}
