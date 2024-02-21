@@ -14,6 +14,7 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   --background-color: hsl(var(--hue-color), 60%, 99%);
+  --header-shadow: rgba(0, 0, 0, 0.25);
   --container-color: #fff;
 
   /* FONT */
@@ -54,17 +55,6 @@ body.dark-theme {
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
   --background-color: hsl(var(--hue-color), 28%, 12%);
+  --header-shadow: rgba(255, 255, 255, 0.25);
   --container-color: hsl(var(--hue-color), 29%, 16%);
-}
-
-@media screen and (min-width: 968px) {
-  :root {
-    --smaller: 0.815rem;
-    --small: 0.875rem;
-    --normal: 1rem;
-    --h3: 1.25rem;
-    --h2: 1.5rem;
-    --h1: 2.25rem;
-    --big: 3rem;
-  }
 }

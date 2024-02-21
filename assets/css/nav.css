@@ -32,7 +32,7 @@
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -1px 4px var(--header-shadow);
     border-radius: 1.5rem 1.5rem 0 0;
     background-color: var(--background-color);
     transition: 0.3s;
@@ -88,7 +88,7 @@
 }
 
 .header--scroll {
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -1px 4px var(--header-shadow);
 }
 
 .theme-button {
