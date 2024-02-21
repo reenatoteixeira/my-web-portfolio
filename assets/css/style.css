@@ -1,22 +1,14 @@
-body {
-  background-color: rgb(19, 23, 41);
-}
-
-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  height: 100vh;
-}
-
-img {
-  width: 200px;
-}
-
-h3 {
-  font-family: monospace;
-  font-size: 24px;
-  color: white;
-}
+@import url("variables.css");
+@import url("common.css");
+@import url("nav.css");
+@import url("home.css");
+@import url("about.css");
+@import url("skills.css");
+@import url("qualifications.css");
+@import url("footer.css");
+@import url("portfolio.css");
+@import url("project.css");
+@import url("testimonial.css");
+@import url("contact.css");
+@import url("scrollTop.css");
+@import url("responsive.css");

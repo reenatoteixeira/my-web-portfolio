@@ -1,0 +1,54 @@
+.footer {
+  padding-top: 2rem;
+}
+
+.footer__container {
+  row-gap: 3.5rem;
+}
+
+.footer__bg {
+  background-color: var(--second-color);
+  padding: 2rem 0 3rem;
+}
+
+.footer__title {
+  font-size: var(--h1);
+  margin-bottom: var(--m-0-25);
+}
+
+.footer__subtitle {
+  font-size: var(--small);
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__link:hover {
+  color: var(--first-color-light);
+}
+
+.footer__social {
+  font-size: 1.25rem;
+  margin-right: var(--m-1-5);
+}
+
+.footer__social:hover {
+  color: var(--first-color-light);
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: var(--smaller);
+  color: var(--text-color-light);
+  margin-top: var(--m-3);
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social {
+  color: white;
+}

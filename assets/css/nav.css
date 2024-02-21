@@ -1,0 +1,103 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+  max-width: 968px;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--medium);
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__toggle:hover {
+  color: var(--first-color);
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px var(--header-shadow);
+    border-radius: 1.5rem 1.5rem 0 0;
+    background-color: var(--background-color);
+    transition: 0.3s;
+  }
+}
+
+.nav__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small);
+  font-weight: var(--medium);
+  color: var(--title-color);
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__icon {
+  font-size: 1.2rem;
+}
+
+.nav__close {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1.3rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.nav__close:hover {
+  color: var(--first-color-alt);
+}
+
+.nav__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu--show {
+  bottom: 0;
+}
+
+.nav__link--active {
+  color: var(--first-color);
+}
+
+.header--scroll {
+  box-shadow: 0 -1px 4px var(--header-shadow);
+}
+
+.theme-button {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--m-1);
+  cursor: pointer;
+}
+
+.theme-button:hover {
+  color: var(--first-color);
+}
