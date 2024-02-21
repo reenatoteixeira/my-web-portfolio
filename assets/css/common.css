@@ -48,6 +48,10 @@ ul {
   list-style: none;
 }
 
+textarea {
+  resize: none;
+}
+
 .section {
   padding: 2rem 0 4rem;
 }
