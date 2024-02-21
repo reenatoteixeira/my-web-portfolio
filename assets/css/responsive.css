@@ -245,6 +245,18 @@
   }
 }
 
+@media screen and (min-width: 968px) {
+  :root {
+    --smaller: 0.815rem;
+    --small: 0.875rem;
+    --normal: 1rem;
+    --h3: 1.25rem;
+    --h2: 1.5rem;
+    --h1: 2.25rem;
+    --big: 3rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .header,
   main,
