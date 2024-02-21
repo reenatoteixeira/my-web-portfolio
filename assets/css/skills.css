@@ -72,27 +72,27 @@
 }
 
 .skills__javascript {
-  width: 90%;
+  width: 70%;
 }
 
 .skills__react {
-  width: 90%;
+  width: 30%;
 }
 
 .skills__php {
-  width: 90%;
+  width: 30%;
 }
 
 .skills__sql {
-  width: 90%;
+  width: 50%;
 }
 
 .skills__figma {
-  width: 90%;
+  width: 70%;
 }
 
 .skills__photoshop {
-  width: 90%;
+  width: 80%;
 }
 
 .--close .skills__list {
