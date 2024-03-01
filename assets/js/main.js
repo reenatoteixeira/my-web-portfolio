@@ -19,12 +19,12 @@ function navMenuToggle() {
 function navMenuLinkAction() {
   const navLink = document.querySelectorAll(".nav__link");
 
-  function linkAction() {
-    const navMenu = document.getElementById("navMenu");
-    navMenu.classList.remove("nav__menu--show");
-  }
-
-  navLink.forEach((n) => n.addEventListener("click", linkAction));
+  navLink.forEach((icon) =>
+    icon.addEventListener("click", () => {
+      const navMenu = document.getElementById("navMenu");
+      navMenu.classList.remove("nav__menu--show");
+    })
+  );
 }
 
 function navActiveLinkHighlight() {
