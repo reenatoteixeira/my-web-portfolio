@@ -30,7 +30,7 @@ function navMenuLinkAction() {
 function navActiveLinkHighlight() {
   const sections = document.querySelectorAll("section[id]");
 
-  function scrollActive() {
+  window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
 
     sections.forEach((current) => {
@@ -48,9 +48,7 @@ function navActiveLinkHighlight() {
           .classList.remove("nav__link--active");
       }
     });
-  }
-
-  window.addEventListener("scroll", scrollActive);
+  });
 }
 
 function setSkillsClass() {
