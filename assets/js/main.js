@@ -167,7 +167,7 @@ function changeTheme() {
     document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
       darkTheme
     );
-    themeButton.classList[selectedIcon === "bx-moon" ? "add" : "remove"](
+    themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
       iconTheme
     );
   }
