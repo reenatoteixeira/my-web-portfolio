@@ -42,7 +42,7 @@
 .footer__copy {
   text-align: center;
   font-size: var(--smaller);
-  color: var(--text-color-light);
+  color: var(--footer-copy-text);
   margin-top: var(--m-3);
 }
 

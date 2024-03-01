@@ -19,18 +19,18 @@ function navMenuToggle() {
 function navMenuLinkAction() {
   const navLink = document.querySelectorAll(".nav__link");
 
-  function linkAction() {
-    const navMenu = document.getElementById("navMenu");
-    navMenu.classList.remove("nav__menu--show");
-  }
-
-  navLink.forEach((n) => n.addEventListener("click", linkAction));
+  navLink.forEach((icon) =>
+    icon.addEventListener("click", () => {
+      const navMenu = document.getElementById("navMenu");
+      navMenu.classList.remove("nav__menu--show");
+    })
+  );
 }
 
 function navActiveLinkHighlight() {
   const sections = document.querySelectorAll("section[id]");
 
-  function scrollActive() {
+  window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
 
     sections.forEach((current) => {
@@ -48,9 +48,7 @@ function navActiveLinkHighlight() {
           .classList.remove("nav__link--active");
       }
     });
-  }
-
-  window.addEventListener("scroll", scrollActive);
+  });
 }
 
 function setSkillsClass() {
@@ -167,7 +165,7 @@ function changeTheme() {
     document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
       darkTheme
     );
-    themeButton.classList[selectedIcon === "bx-moon" ? "add" : "remove"](
+    themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
       iconTheme
     );
   }
